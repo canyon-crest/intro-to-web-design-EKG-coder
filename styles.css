@@ -1,1 +1,17 @@
+body {
+    background-color: rgba(2, 184, 250, 0.144);
+    color: rgb(8, 75, 87);
+    font-family:'Courier New', Courier, monospace;
+}
 
+p {
+    line-height: 2.25em;
+}
+
+img {
+    width: 300px;
+    float: left;
+    border: solid 3px rgba(0, 187, 255, 0.616);
+    border-radius: 9px;
+    margin-right: 20px;
+}
