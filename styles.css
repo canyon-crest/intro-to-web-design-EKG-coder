@@ -1,7 +1,53 @@
 body {
-    background-color: rgba(2, 184, 250, 0.144);
-    color: rgb(8, 75, 87);
-    font-family:'Courier New', Courier, monospace;
+    background-color: #CFDEE7;
+    color: #1F2041;
+    font-family: "Arial";
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    background-color: #4472CA;
+    padding: 30px;
+    width: 1100px;
+    margin: 0 auto;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+#sidebar {
+    background-color: #92B4F4;
+    padding: 20px;
+    border: 3px solid white;
+    width: 20%;
+    float: right;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-family: "Courier";
+    color: #5E7CE2;
+    background: #0A369D;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 3em;
+    border: 6px groove white;
+    border-radius: 30 px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    width: 100px;
+    border-left: 30px double #92B4F4;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 15px;
 }
 
 p {
@@ -11,7 +57,108 @@ p {
 img {
     width: 300px;
     float: left;
-    border: solid 3px rgba(0, 187, 255, 0.616);
+    border: solid 3px, #92B4F4;
     border-radius: 9px;
     margin-right: 20px;
+}
+
+Lucy {
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.highlight {
+    background-color: #92B4F4;
+    font-weight: bold;
+    color: #0A369D;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a:link {
+    color: #0A369D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #0A369D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #92B4F4;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:active {
+    color: #0A369D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.highlight:active {
+    background-color: #0A369D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul {
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+#sidebar h3{
+    border-color: #92B4F4;
+    font-size: 1.2em;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background: #CFDEE7;
+    }
+    
+    #container {
+        background: #4472CA;
+        width: 875px;
+        border: none;
+    }
+    
+    #sidebar {
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    h1 {
+        width: 70%;
+        background: none;
+        border: none;
+    }
+    
+    p {
+        text-align: justify;
+    }
+    }
+
+@media (max-width: 768px) {
+    #container, body{
+        background: #4472CA;
+        margin: 0 auto;
+        padding: 4px;
+    }
+    
+    #sidebar {
+        display: none;
+    }
+
+    img, #Lucy {
+        width: 95%;
+        float: none;
+        margin: 0 auto;
+        padding: 10px;
+    }
 }
