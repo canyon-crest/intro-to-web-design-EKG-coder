@@ -65,21 +65,27 @@ p {
     margin-bottom: 18px;
 }
 
+.section-text {
+    line-height: 2.25 em;
+    margin-bottom: 18px;
+}
+
 img {
     width: 300px;
     float: left;
-    border: solid 3px, #92B4F4;
+    border: solid 3px #92B4F4;
     border-radius: 9px;
     margin-right: 20px;
-}
-
-img:hover {
-    border: #0A369D;
-    transform: scale(1.05);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.Lucy {
+img:hover {
+    border: solid 3px #0A369D;
+    border-radius: 9px;
+    transform: scale(1.05);
+}
+
+#Lucy {
     float: right;
     margin-right: 0;
     margin-left: 10px;
@@ -128,7 +134,7 @@ ul {
     font-size: 1em;
 }
 
-#sidebar h3{
+#sidebar h4{
     border-color: #92B4F4;
     font-size: 1.2em;
 }
@@ -204,6 +210,10 @@ ul {
         margin: 0 auto;
         padding: 10px;
     }
+
+    img:hover {
+        transform: none;
+    }
 }
 
 /* Navbar Styles */
@@ -247,7 +257,7 @@ ul {
     text-decoration: none;
     font-size: 18px;
     color: #fff;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
 }
 
 .navbar ul li a::before{
